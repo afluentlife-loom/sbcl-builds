@@ -15,6 +15,8 @@ Each release is tagged `sbcl-<version>` and carries:
 - `sbcl-<version>-x86-64-linux.tar.gz` and `sbcl-<version>-arm64-linux.tar.gz`,
   each holding SBCL's install tree for `/usr/local`: `bin/`, `lib/sbcl/` and
   `share/`;
+- `sbcl-<version>-source.tar.bz2`: SBCL's own source release, byte for byte, so
+  a machine building from source needs nothing but GitHub;
 - a `.sha256` file for each tarball.
 
 Install by unpacking into `/usr/local`:
@@ -45,6 +47,8 @@ each against a pinned SHA-256 before installing.
 - Source: `sbcl-2.6.9-source.tar.bz2` from
   https://sourceforge.net/projects/sbcl/files/sbcl/2.6.9/, with SHA-256
   `c6fd1d735570eb4ff34caf9609988ca77ed0bd12b55d09a4fed075be890da513`.
+  A fresh download on 2026-10-19 matched that checksum, and the same file is a
+  release asset here.
 - Built 2026-10-18 in `ubuntu:24.04` containers.
 
 ## Licence
